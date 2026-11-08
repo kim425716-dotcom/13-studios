@@ -4044,3 +4044,658 @@ body.show-13-grid-overlay .architectural-13-grid-overlay {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   STARTUP COMPANY ARCHITECTURE - EXTENSION STYLES
+   ========================================================================== */
+
+/* Header Startup Enhancements */
+.startup-version-pill {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(59, 90, 160, 0.08);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pulse-emerald {
+  background-color: #10b981 !important;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-green 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse-green {
+  to {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+}
+
+.startup-cta-pill {
+  background: var(--color-accent) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--color-accent) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.startup-cta-pill:hover {
+  background: var(--color-accent-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(59, 90, 160, 0.25);
+}
+
+/* Hero Announcement Banner */
+.startup-announcement-wrap {
+  margin-bottom: 24px;
+}
+
+.startup-announcement-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 16px 6px 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  box-shadow: 0 4px 16px var(--color-shadow);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.startup-announcement-pill:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(59, 90, 160, 0.15);
+}
+
+.startup-announcement-pill .pill-tag {
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.startup-announcement-pill .pill-text {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.startup-announcement-pill .pill-arrow {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  transition: transform 0.3s ease;
+}
+
+.startup-announcement-pill:hover .pill-arrow {
+  transform: translateX(4px);
+}
+
+/* Terminal CLI Copy Pill */
+.startup-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-terminal-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  box-shadow: 0 4px 14px var(--color-shadow);
+}
+
+.hero-terminal-pill:hover {
+  border-color: var(--color-accent);
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(59, 90, 160, 0.14);
+}
+
+.hero-terminal-pill .terminal-prefix {
+  color: var(--color-accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.hero-terminal-pill .terminal-cmd {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.hero-terminal-pill .terminal-copy-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.2s ease;
+}
+
+.hero-terminal-pill:hover .terminal-copy-btn {
+  color: var(--color-accent);
+}
+
+.hero-terminal-pill .copied-text {
+  color: #10b981;
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.live-edge-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.live-edge-indicator .pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.8);
+}
+
+/* Live Telemetry Banner (Company Section) */
+.startup-telemetry-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  padding: 16px 28px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  box-shadow: 0 6px 20px var(--color-shadow);
+}
+
+.telemetry-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+}
+
+.telemetry-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.telemetry-label {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.telemetry-value {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.grid-toggle-button {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.grid-toggle-button:hover,
+.grid-toggle-button.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* Module Card Code & Packaging */
+.work-card-pkg code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  background: rgba(59, 90, 160, 0.08);
+  border: 1px solid var(--color-border);
+  color: var(--color-accent);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Modal Install Code Block */
+.modal-install-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 10px 18px;
+  background: rgba(11, 31, 58, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.modal-install-block:hover {
+  background: rgba(11, 31, 58, 0.08);
+  border-color: var(--color-accent);
+}
+
+.modal-install-block .install-prompt {
+  color: var(--color-accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
+
+.modal-install-block .install-cmd {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.modal-install-block .install-copy-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-install-block:hover .install-copy-btn {
+  color: var(--color-accent);
+}
+
+/* Partner Ticker Startup Cert Card */
+.startup-cert-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cert-badge-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(59, 90, 160, 0.08);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Startup Testimonials Metric Badge */
+.t-card-metric-badge {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.t-card-metric-badge .metric-tag {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.t-card-metric-badge .metric-highlight {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* Pricing Section Architecture */
+.pricing-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.pricing-toggle-pills {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  padding: 5px;
+  border-radius: 999px;
+  box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+.pricing-cycle-btn {
+  background: transparent;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pricing-cycle-btn.active {
+  background: var(--color-accent);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(59, 90, 160, 0.25);
+}
+
+.pricing-cycle-btn .save-badge {
+  background: #10b981;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.pricing-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 72px;
+}
+
+.pricing-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 38px 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 24px var(--color-shadow);
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent);
+  box-shadow: 0 16px 36px rgba(11, 31, 58, 0.12);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--color-accent);
+  background: #ffffff;
+  box-shadow: 0 12px 36px rgba(59, 90, 160, 0.16);
+}
+
+.p-featured-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-accent);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 16px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(59, 90, 160, 0.3);
+}
+
+.p-tier-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.p-tier-badge.accent {
+  color: var(--color-accent);
+}
+
+.p-tier-name {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 10px;
+}
+
+.p-tier-sub {
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  min-height: 48px;
+}
+
+.p-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.p-currency {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.p-amount {
+  font-family: var(--font-sans);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.p-amount-custom {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.p-period {
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  margin-left: 4px;
+}
+
+.p-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+
+.p-features-list li {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.45;
+}
+
+.p-features-list li i {
+  color: #10b981;
+  font-size: 0.85rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.p-features-list li code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  background: rgba(11, 31, 58, 0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.p-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.p-cta-btn.primary {
+  background: var(--color-accent);
+  color: #ffffff;
+  border: 1px solid var(--color-accent);
+}
+
+.p-cta-btn.primary:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(59, 90, 160, 0.3);
+}
+
+.p-cta-btn.secondary {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.p-cta-btn.secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(59, 90, 160, 0.04);
+  transform: translateY(-2px);
+}
+
+/* Footer Startup Corporate Badge */
+.footer-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.startup-corp-badge {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(59, 90, 160, 0.1);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.footer-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.footer-status-pill .pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.8);
+}
+
+/* Responsive Styles for Startup Layout */
+@media (max-width: 1024px) {
+  .pricing-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .startup-telemetry-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .startup-announcement-pill {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .startup-announcement-pill .pill-tag {
+    font-size: 0.6rem;
+  }
+
+  .hero-terminal-pill {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

@@ -29,27 +29,28 @@ export default function Header({ onToggleMenu }) {
         <a href="#hero" className="logo-text">
           13<sup>STUDIOS</sup>
         </a>
+        <span className="startup-version-pill">v2.4 CORE</span>
       </div>
 
       <div className="header-meta-bar">
         <div className="header-time-block">
-          <span className="live-status-dot" title="Accepting Commissions"></span>
-          <span className="header-location">KIAMBU / NAIROBI</span>
-          <span className="header-time-val">{timeString || '02:20:00'} EAT</span>
+          <span className="live-status-dot pulse-emerald" title="System Status: 99.99% Operational"></span>
+          <span className="header-location">CLUSTERS ACTIVE</span>
+          <span className="header-time-val">{timeString || '10:42:00'} EAT • 8ms</span>
         </div>
-        <a href="#contact" className="header-inquire-pill">
-          <span>Inquire</span>
+        <a href="#contact" className="header-inquire-pill startup-cta-pill">
+          <span>Get Access</span>
           <i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>
 
       <nav className="nav-pill" aria-label="Main Floating Navigation">
         <div className="nav-pill-links">
-          <a href="#work" className="nav-link">Work</a>
-          <a href="#studio" className="nav-link">Studio</a>
-          <a href="#testimonials" className="nav-link">Accolades</a>
-          <a href="#journal" className="nav-link">Journal</a>
-          <a href="#contact" className="nav-link">Connect</a>
+          <a href="#work" className="nav-link">Platform</a>
+          <a href="#studio" className="nav-link">Architecture</a>
+          <a href="#testimonials" className="nav-link">Customers</a>
+          <a href="#journal" className="nav-link">Research</a>
+          <a href="#contact" className="nav-link">Pricing</a>
         </div>
         <button
           id="menu-toggle"

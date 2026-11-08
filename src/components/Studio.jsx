@@ -7,74 +7,74 @@ gsap.registerPlugin(ScrollTrigger);
 const leadership = [
   {
     name: 'Brian Kimani',
-    role: 'Founder & Executive Creative Director',
-    discipline: 'Brand Architecture & Semiotics',
+    role: 'Co-Founder & Chief Executive Officer',
+    discipline: 'Distributed Systems & Product Architecture',
     image: 'assets/team_brian.png',
-    bio: 'Guiding structural brand transformations for global innovators. Over a decade formulating quiet-luxury identities, custom typographic suites, and architectural flagships across Europe, Africa, and North America.'
+    bio: 'Systems engineer and product visionary. Guided high-throughput distributed infrastructure across Africa, Europe, and North America. Pioneering the 13 Studios platform vision of autonomous spatial interfaces and quiet-luxury computing.'
   },
   {
     name: 'Elena Vance',
-    role: 'Director of Digital Systems',
-    discipline: 'Computational Platforms & WebGL',
+    role: 'Co-Founder & Chief Technology Officer',
+    discipline: 'Deep Learning, WebGPU & Compiler Systems',
     image: 'assets/team_elena.png',
-    bio: 'Specialist in high-framerate kinetic physics, design token architecture, and zero-latency micro-interactions. Championing mathematical restraint in scalable enterprise design systems.'
+    bio: 'Researcher in real-time GPU pipelines, zero-overhead WebAssembly runtimes, and algorithmic layout solvers. Primary architect of the Vapor WebGPU shader engine and the Aero design compiler.'
   },
   {
     name: 'Marcus Thorne',
-    role: 'Head of Strategic Formulation',
-    discipline: 'Topology & Sovereign Positioning',
+    role: 'Chief Operating Officer & Head of Growth',
+    discipline: 'Enterprise GTM & Venture Strategy',
     image: 'assets/team_marcus.png',
-    bio: 'Advising private equity sponsors, sovereign wealth initiatives, and emerging market benchmarks on structural brand positioning, investor narrative clarity, and institutional prestige.'
+    bio: 'Ex-venture partner and enterprise software operator. Scaled high-velocity developer platforms across Fortune 500 accounts, guiding enterprise security certifications, sovereign cloud partnerships, and Series A expansion.'
   }
 ];
 
 const phases = [
   {
     num: '01',
-    name: 'Diagnostic Intelligence',
-    timeline: 'Weeks 1–2',
-    objective: 'Forensic deconstruction of brand equity, market positioning, and architectural requirements.',
+    name: 'Zero-Config SDK Integration',
+    timeline: 'Day 1 // Instant Provisioning',
+    objective: 'Deploy the 13 Studios runtime into existing React, Next.js, or WebAssembly environments with one terminal command.',
     deliverables: [
-      'Competitive Topology & Semiotic Audit',
-      'Executive Stakeholder Discovery Interviews',
-      'Architectural Requirements Matrix',
-      'Strategic Differentiation Blueprint'
+      'Universal CLI Setup (`npx create-13-app@latest`)',
+      'Automated TypeScript Schema & Token Ingestion',
+      'Instant Local WebGPU Simulation Sandbox',
+      'CI/CD Pipeline Validation Hook'
     ]
   },
   {
     num: '02',
-    name: 'Architectural Formulation',
-    timeline: 'Weeks 3–5',
-    objective: 'Translating strategy into spatial wireframes, typographic heirlooms, and conceptual directions.',
+    name: 'Pipeline Compilation & Token Sync',
+    timeline: 'Week 1 // Architecture Mapping',
+    objective: 'Compile spatial layouts, typography, and shader models into zero-overhead production binaries.',
     deliverables: [
-      'Core Creative Directions & Editorial Monograph',
-      'Structural Grid Proportions (13-Col System)',
-      'Custom Typography & Numeral Specifications',
-      'Interactive Micro-Motion Concept Prototypes'
+      'Figma & Spatial File AST Transpilation',
+      'Automated 13-Point Grid Constraint Solving',
+      'Micro-Mechanical Motion & Spring Curve Calibration',
+      'Static Asset Volumetric Compression'
     ]
   },
   {
     num: '03',
-    name: 'High-Fidelity Execution',
-    timeline: 'Weeks 6–10',
-    objective: 'Precision production across digital flagships, 3D spatial assets, and tokenized design systems.',
+    name: 'Global Edge Mesh Deployment',
+    timeline: 'Week 2 // Staging & Anycast Routing',
+    objective: 'Broadcast front-end payloads across 280+ Anycast edge regions with sub-8ms response guarantees.',
     deliverables: [
-      'Production WebGL / 3D Asset Pipeline',
-      'Component Design System (Figma & Code Tokens)',
-      'Editorial Responsive Layouts & Interactions',
-      'Cross-Platform Performance & Latency Tuning'
+      'Edge Cache Warm-Up & Global DNS Propagation',
+      'SOC2 Type II Cryptographic Build Verification',
+      'End-to-End Latency & Memory Stress Benchmarks',
+      'Multi-Device GPU Fallback Validation'
     ]
   },
   {
     num: '04',
-    name: 'Stewardship & Governance',
-    timeline: 'Ongoing / Post-Launch',
-    objective: 'Continuous stewardship ensuring brand integrity, multi-market expansion, and technical resilience.',
+    name: 'Autonomous Telemetry & Optimization',
+    timeline: 'Continuous // 99.99% Enterprise SLA',
+    objective: 'Real-time observability, predictive friction detection, and self-calibrating runtime resource allocation.',
     deliverables: [
-      'Brand Governance Standards & Manuals',
-      'Multi-Market Asset Localisation Protocols',
-      'Quarterly Creative Advisory Checkpoints',
-      'Direct Director Architectural Stewardship'
+      'Valence 120Hz Spatial Interaction Heatmaps',
+      'Predictive Edge Pre-Fetching Algorithms',
+      'Automated Performance Regression Alerts',
+      '24/7 Dedicated Solutions Engineer Escalation'
     ]
   }
 ];
@@ -82,42 +82,59 @@ const phases = [
 const pillars = [
   {
     num: '01',
-    title: 'Brand Architecture & Semiotics',
-    description: 'We craft comprehensive verbal and visual identities for market leaders. From naming and positioning to custom typographic suites and packaging systems, we build singular brand assets that endure for decades.',
-    services: ['Strategic Positioning', 'Visual & Verbal Identity', 'Bespoke Display Typography', 'Tactile Luxury Packaging', 'Brand Architecture Guidelines']
+    title: 'Zero-Overhead Rust & WebGPU Core',
+    description: 'We reject bloated client-side JavaScript runtimes. The 13 Studios engine is authored in Rust and compiled to WebAssembly, dispatching compute shaders directly to client GPUs for buttery 120 FPS performance with zero garbage collection stutter.',
+    specs: ['Rust / WebAssembly Runtime', 'Native WebGPU Compute Shaders', 'Zero-Copy Framebuffer Transfers', 'Sub-100KB Production Core Payload']
   },
   {
     num: '02',
-    title: 'Digital Flagships & Platforms',
-    description: 'We construct digital platforms that function as architectural flagships. Every interface is governed by the 13-point spatial grid, blending quiet editorial typography with fluid, responsive performance.',
-    services: ['Editorial Web Architecture', 'Bespoke E-Commerce Platforms', 'Design Systems & Tokens', 'Interactive 3D & WebGL', 'Headless CMS Architecture']
+    title: 'Anycast Distributed Edge Mesh',
+    description: 'Every front-end asset, state token, and dynamic API route is served from an ultra-low latency mesh of 280+ edge POPs worldwide. Users in Tokyo, Nairobi, Zurich, and San Francisco experience instantaneous sub-8ms responses.',
+    specs: ['280+ Global Edge Data Centers', 'Sub-8ms Anycast Network Routing', 'Brotli & Zstandard Adaptive Compression', 'DDoS & TLS 1.3 Hardware Acceleration']
   },
   {
     num: '03',
-    title: 'Motion Direction & Spatial 3D',
-    description: 'Motion is not an afterthought; it is the nervous system of modern luxury. We choreograph physics-calibrated deceleration curves, generative shaders, and spatial environments that communicate weight and value.',
-    services: ['3D CGI & Spatial Direction', 'Physics-Based Interaction Physics', 'Generative Motion Branding', 'Launch Cinema & Monograph Films', 'Interface Sonic Architecture']
+    title: 'The Proprietary 13-Point Grid Matrix',
+    description: 'Our proprietary layout algorithm calculates visual hierarchy, padding, and typographic proportion across 13 mathematically harmonic columns. It eliminates cognitive friction and brings quiet luxury restraint to complex enterprise dashboards.',
+    specs: ['Mathematical Asymmetric Grid Solver', 'Fluid Dynamic Viewport Scaling', 'Automated Visual Balance Verification', 'Adaptive Accessibility & Contrast Ratios']
   },
   {
     num: '04',
-    title: 'Design Systems & Engineering',
-    description: 'Great design demands uncompromising engineering fidelity. We develop modular, tokenized design systems and clean production frontends that empower in-house teams to maintain absolute aesthetic consistency.',
-    services: ['Design Tokens & Systems', 'Enterprise UI Kits', 'Front-End Implementation', 'Performance & Accessibility', 'Technical Creative Governance']
+    title: 'Enterprise Cryptographic Provenance',
+    description: 'Built from day one for defense-grade security and regulated industries. Every component build is cryptographically signed, immutable, and backed by automated SOC2 Type II audit logging and enterprise SSO.',
+    specs: ['SOC2 Type II & ISO 27001 Certified', 'Hardware Security Module (HSM) Signing', 'SAML 2.0 / Okta Enterprise Identity', 'Zero-Trust Role-Based Access Control']
+  }
+];
+
+const galleryImages = [
+  {
+    src: 'assets/studio_atelier.png',
+    title: 'The Systems Architecture Lab',
+    caption: 'Silicon & Display Research Hub — Kiambu / Nairobi Flagship'
+  },
+  {
+    src: 'assets/studio_craft.png',
+    title: 'Tactile Materiality & Hardware Bench',
+    caption: 'Calibrating physical and digital sensory feedback curves'
   }
 ];
 
 export default function Studio() {
-  const sectionRef = useRef(null);
-  const textRef = useRef(null);
   const [activePhase, setActivePhase] = useState(0);
-  const [isGridOverlayActive, setIsGridOverlayActive] = useState(false);
+  const [gridOverlayActive, setGridOverlayActive] = useState(false);
+  const sectionRef = useRef(null);
 
   const toggleGridOverlay = () => {
-    setIsGridOverlayActive((prev) => {
-      const next = !prev;
-      document.body.classList.toggle('show-13-grid-overlay', next);
-      return next;
-    });
+    const overlay = document.querySelector('.architectural-13-grid-overlay');
+    if (overlay) {
+      if (gridOverlayActive) {
+        overlay.classList.remove('active');
+        setGridOverlayActive(false);
+      } else {
+        overlay.classList.add('active');
+        setGridOverlayActive(true);
+      }
+    }
   };
 
   useEffect(() => {
@@ -151,51 +168,17 @@ export default function Studio() {
           {
             y: 0,
             opacity: 1,
-            duration: 0.8,
+            duration: 1,
             stagger: 0.1,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: header,
-              start: 'top 90%',
+              start: 'top 85%',
               toggleActions: 'play none none none',
             },
           }
         );
       }
-
-      if (textRef.current) {
-        gsap.fromTo(
-          textRef.current,
-          { fontWeight: 200, opacity: 0.5 },
-          {
-            fontWeight: 500,
-            opacity: 1,
-            scrollTrigger: {
-              trigger: textRef.current,
-              start: 'top 85%',
-              end: 'bottom 45%',
-              scrub: true,
-            },
-          }
-        );
-      }
-
-      gsap.fromTo(
-        '.atelier-gallery-item, .pillar-card, .director-card',
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.1,
-          duration: 1,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: '.atelier-visual-gallery',
-            start: 'top 85%',
-            toggleActions: 'play none none none',
-          },
-        }
-      );
     }, sectionRef);
 
     return () => ctx.revert();
@@ -203,193 +186,209 @@ export default function Studio() {
 
   return (
     <section ref={sectionRef} id="studio" className="studio-section">
-      <div className="section-header">
-        <span className="section-number">02 /</span>
-        <h2 className="section-title">The Studio</h2>
-        <div className="section-header-line"></div>
-      </div>
-
-      <div className="studio-content">
-        {/* Core Manifesto Statement */}
-        <div className="studio-statement">
-          <span className="manifesto-eyebrow">Studio Manifesto</span>
-          <p ref={textRef} className="variable-weight-text">
-            We believe in the power of restraint. In an attention economy saturated with noise, quiet luxury is the ultimate statement of authority. We construct brand architectures that are structurally balanced, conceptually rich, and seamlessly executed.
+      <div className="studio-container">
+        {/* Section Header */}
+        <div className="section-header">
+          <div className="section-header-line"></div>
+          <div className="section-header-text">
+            <span className="section-number">02</span>
+            <h2 className="section-title">Company & Architecture</h2>
+          </div>
+          <p className="section-header-desc">
+            Founded at the convergence of distributed systems engineering, WebGPU graphics, and quiet luxury product design.
           </p>
         </div>
 
-        {/* Visual Atelier & Material Craftsmanship Showcase */}
-        <div className="atelier-visual-gallery">
-          <div className="atelier-gallery-item atelier-large">
-            <div className="gallery-img-wrap">
-              <img
-                src="assets/studio_atelier.png"
-                alt="13 Studios Flagship Atelier in Kiambu, Kenya"
-                className="gallery-photo"
-                loading="lazy"
-              />
-              <div className="gallery-overlay-badge">
-                <span className="badge-dot"></span>
-                <span>Kiambu Atelier // Flagship Sanctum</span>
-              </div>
-            </div>
-            <div className="gallery-caption">
-              <span className="cap-title">Architectural Atelier // Kiambu, Kenya</span>
-              <span className="cap-desc">Floor-to-ceiling vistas, board-formed concrete & solid dark oak drafting tables where every monograph originates.</span>
-            </div>
+        {/* Live Cluster & Telemetry Status Bar */}
+        <div className="startup-telemetry-banner">
+          <div className="telemetry-item">
+            <span className="telemetry-dot pulse-emerald"></span>
+            <span className="telemetry-label">Cluster Status:</span>
+            <span className="telemetry-value">All 12 Regions Operational</span>
           </div>
+          <div className="telemetry-item">
+            <span className="telemetry-label">Edge Ping:</span>
+            <span className="telemetry-value">7.4ms (Anycast)</span>
+          </div>
+          <div className="telemetry-item">
+            <span className="telemetry-label">WASM Compute:</span>
+            <span className="telemetry-value">0.8ms / frame</span>
+          </div>
+          <div className="telemetry-item">
+            <button
+              className={`grid-toggle-button ${gridOverlayActive ? 'active' : ''}`}
+              onClick={toggleGridOverlay}
+              aria-label="Toggle 13-column grid overlay"
+            >
+              <i className="fa-solid fa-table-cells"></i>
+              <span>{gridOverlayActive ? 'Hide 13-Point Matrix' : 'Inspect 13-Point Matrix'}</span>
+            </button>
+          </div>
+        </div>
 
-          <div className="atelier-gallery-item atelier-compact">
-            <div className="gallery-img-wrap">
-              <img
-                src="assets/studio_craft.png"
-                alt="Tactile Luxury Branding Craftsmanship & Cotton Paper Archive"
-                className="gallery-photo"
-                loading="lazy"
-              />
-              <div className="gallery-overlay-badge">
-                <span className="badge-dot"></span>
-                <span>Tactile Formulation</span>
+        {/* Studio Manifesto / Narrative Row */}
+        <div className="studio-manifesto-row">
+          <div className="manifesto-lead">
+            <span className="manifesto-eyebrow">The 13 Thesis</span>
+            <h3 className="manifesto-headline">
+              Software should feel as calm, enduring, and mathematically precise as high architecture.
+            </h3>
+          </div>
+          <div className="manifesto-body">
+            <p className="manifesto-text">
+              We started 13 Studios with a conviction: the modern web is drowning in noisy JavaScript bloat, clumsy frameworks, and frantic visual churn. High-growth enterprises deserve digital tools engineered with the uncompromising precision of Swiss horology and the raw speed of bare-metal computing.
+            </p>
+            <p className="manifesto-text">
+              From our global headquarters in Nairobi to engineering nodes in San Francisco and London, our team builds the foundational software substrate that enables developers to stream photorealistic, physics-calibrated interfaces without compromise.
+            </p>
+            <div className="manifesto-key-stats">
+              <div className="m-stat">
+                <span className="m-val">$18.5M</span>
+                <span className="m-lbl">Series A Capital</span>
               </div>
-            </div>
-            <div className="gallery-caption">
-              <span className="cap-title">Tactile Materiality & Archival Print</span>
-              <span className="cap-desc">600gsm debossed cotton substrates, micro-foil typography, and custom fluted glass packaging prototypes.</span>
+              <div className="m-stat">
+                <span className="m-val">1,400+</span>
+                <span className="m-lbl">Tech Teams Deployed</span>
+              </div>
+              <div className="m-stat">
+                <span className="m-val">99.99%</span>
+                <span className="m-lbl">Enterprise SLA</span>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Leadership & Practice Directors Showcase */}
-        <div className="studio-sub-header">
-          <span className="manifesto-eyebrow">Studio Leadership</span>
-          <h3 className="studio-sub-title">Practice Directors</h3>
-          <p className="studio-sub-desc">Direct executive involvement on every engagement — no junior handoffs or bureaucratic dilution.</p>
+        {/* Architectural Hardware & Lab Showcase Gallery */}
+        <div className="studio-gallery-grid">
+          {galleryImages.map((img, idx) => (
+            <div key={idx} className="studio-gallery-card">
+              <div
+                className="studio-gallery-img"
+                style={{ backgroundImage: `url('${img.src}')` }}
+              ></div>
+              <div className="studio-gallery-caption">
+                <span className="gallery-plate-num">FACILITY PLATE 0{idx + 1}</span>
+                <h4 className="gallery-plate-title">{img.title}</h4>
+                <p className="gallery-plate-desc">{img.caption}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="directors-grid">
-          {leadership.map((dir, idx) => (
-            <div key={idx} className="director-card">
-              <div className="director-photo-wrap">
-                <img
-                  src={dir.image}
-                  alt={dir.name}
-                  className="director-photo"
-                  loading="lazy"
-                />
-                <div className="director-discipline-badge">
-                  <span>{dir.discipline}</span>
+        {/* Four Technical Architecture Pillars */}
+        <div className="pillars-section-wrap">
+          <div className="pillars-header">
+            <span className="pillars-eyebrow">Core Engineering Substrates</span>
+            <h3 className="pillars-heading">Architectural Foundations of the 13 Platform</h3>
+          </div>
+
+          <div className="pillars-grid">
+            {pillars.map((pillar) => (
+              <div key={pillar.num} className="pillar-card">
+                <div className="pillar-top">
+                  <span className="pillar-num">{pillar.num}</span>
+                  <div className="pillar-accent-line"></div>
+                </div>
+                <h4 className="pillar-title">{pillar.title}</h4>
+                <p className="pillar-description">{pillar.description}</p>
+                
+                <div className="pillar-services-list">
+                  <span className="pillar-services-title">Technical Specifications:</span>
+                  <ul>
+                    {pillar.specs.map((spec, i) => (
+                      <li key={i}>
+                        <span className="spec-check">✦</span>
+                        <span>{spec}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-              <div className="director-info">
-                <h4 className="director-name">{dir.name}</h4>
-                <span className="director-role">{dir.role}</span>
-                <p className="director-bio">{dir.bio}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* Studio Pillars Grid */}
-        <div className="studio-sub-header">
-          <span className="manifesto-eyebrow">Disciplinary Foundations</span>
-          <h3 className="studio-sub-title">Core Disciplinary Practices</h3>
-          <p className="studio-sub-desc">Four specialized disciplines integrated into a unified creative architecture.</p>
-        </div>
-
-        <div className="studio-pillars-grid">
-          {pillars.map((pillar) => (
-            <div key={pillar.num} className="pillar-card">
-              <span className="pillar-num">{pillar.num} //</span>
-              <h4 className="pillar-title">{pillar.title}</h4>
-              <p className="pillar-desc">{pillar.description}</p>
-              <div className="pillar-services">
-                <span className="services-heading">Core Capabilities:</span>
-                <ul className="pillar-services-list">
-                  {pillar.services.map((svc, i) => (
-                    <li key={i}>{svc}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Phased Engagement Model & Interactive Methodology Explorer */}
-        <div className="studio-methodology-wrapper">
-          <div className="methodology-header">
-            <div>
-              <span className="methodology-eyebrow">Engagement Framework</span>
-              <h3 className="methodology-title">The 13 Phased Methodology</h3>
-            </div>
-            <p className="methodology-summary">
-              Every commission proceeds through four deliberate review gates, ensuring mathematical precision from diagnosis to global rollout.
+        {/* Founders & Executive Leadership */}
+        <div className="leadership-section-wrap">
+          <div className="leadership-header">
+            <span className="leadership-eyebrow">Founding Team & Leadership</span>
+            <h3 className="leadership-heading">Engineers, Researchers & Systems Architects</h3>
+            <p className="leadership-sub">
+              Leadership combining decades of experience across distributed systems, GPU research, and enterprise scale.
             </p>
           </div>
 
-          <div className="methodology-tabs" role="tablist">
-            {phases.map((ph, idx) => (
+          <div className="leadership-grid">
+            {leadership.map((leader, idx) => (
+              <div key={idx} className="leader-card">
+                <div className="leader-photo-wrap">
+                  <div
+                    className="leader-photo"
+                    style={{ backgroundImage: `url('${leader.image}')` }}
+                  ></div>
+                  <div className="leader-photo-overlay"></div>
+                  <span className="leader-discipline-tag">{leader.discipline}</span>
+                </div>
+                <div className="leader-info">
+                  <h4 className="leader-name">{leader.name}</h4>
+                  <span className="leader-role">{leader.role}</span>
+                  <p className="leader-bio">{leader.bio}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 4-Stage Platform Deployment Lifecycle */}
+        <div className="phases-section-wrap">
+          <div className="phases-header">
+            <span className="phases-eyebrow">Platform Deployment Lifecycle</span>
+            <h3 className="phases-heading">From Terminal Ingestion to Enterprise Scale</h3>
+            <p className="phases-sub">
+              How engineering teams integrate, compile, and stream 13 Studios in production.
+            </p>
+          </div>
+
+          {/* Phase Selector Tabs */}
+          <div className="phase-tabs-row" role="tablist">
+            {phases.map((p, idx) => (
               <button
-                key={ph.num}
+                key={p.num}
                 role="tab"
                 aria-selected={activePhase === idx}
-                className={`methodology-tab-btn ${activePhase === idx ? 'is-active' : ''}`}
+                className={`phase-tab-btn ${activePhase === idx ? 'active' : ''}`}
                 onClick={() => setActivePhase(idx)}
               >
-                <span className="tab-num">{ph.num}</span>
-                <span className="tab-name">{ph.name}</span>
-                <span className="tab-timeline">{ph.timeline}</span>
+                <span className="tab-p-num">{p.num}</span>
+                <span className="tab-p-name">{p.name}</span>
+                <span className="tab-p-timeline">{p.timeline.split('//')[0]}</span>
               </button>
             ))}
           </div>
 
-          <div className="methodology-card-panel">
-            <div className="panel-header-row">
-              <div>
-                <span className="panel-phase-badge">Phase {phases[activePhase].num}</span>
-                <h4 className="panel-phase-title">{phases[activePhase].name}</h4>
+          {/* Active Phase Details Display */}
+          <div className="phase-active-card">
+            <div className="phase-card-header">
+              <div className="phase-meta-col">
+                <span className="phase-big-num">{phases[activePhase].num}</span>
+                <span className="phase-timeline-badge">{phases[activePhase].timeline}</span>
               </div>
-              <span className="panel-duration-pill">{phases[activePhase].timeline}</span>
+              <div className="phase-title-col">
+                <h4 className="phase-active-name">{phases[activePhase].name}</h4>
+                <p className="phase-objective-text">{phases[activePhase].objective}</p>
+              </div>
             </div>
-            <p className="panel-objective">{phases[activePhase].objective}</p>
 
-            <div className="panel-deliverables-block">
-              <span className="deliverables-title">Phase Milestones & Executive Deliverables:</span>
-              <div className="panel-deliverables-grid">
-                {phases[activePhase].deliverables.map((item, i) => (
-                  <div key={i} className="panel-del-item">
+            <div className="phase-deliverables-wrap">
+              <span className="phase-del-title">Execution Deliverables & Artifacts:</span>
+              <div className="phase-del-grid">
+                {phases[activePhase].deliverables.map((item, dIdx) => (
+                  <div key={dIdx} className="phase-del-item">
                     <span className="del-bullet">✦</span>
-                    <span>{item}</span>
+                    <span className="del-name">{item}</span>
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* The 13 Standard & Interactive Grid Overlay */}
-        <div className="studio-standard-banner">
-          <div className="standard-info">
-            <span className="standard-tag">Proprietary Discipline</span>
-            <h3 className="standard-title">The 13-Point Architectural Grid</h3>
-            <p className="standard-desc">
-              Every layout, typographic hierarchy, and motion easing curve across our work is calculated on a 13-column structural matrix. This deliberate asymmetry creates an indelible rhythm between content density and serene negative space.
-            </p>
-            <button
-              className="toggle-grid-btn"
-              onClick={toggleGridOverlay}
-              aria-pressed={isGridOverlayActive}
-            >
-              <i className={`fa-solid ${isGridOverlayActive ? 'fa-eye-slash' : 'fa-grid-2'}`}></i>
-              <span>{isGridOverlayActive ? 'Deactivate 13-Grid Overlay' : 'Preview 13-Grid System Overlay'}</span>
-            </button>
-          </div>
-          <div className="standard-visual-motif">
-            <div className="motif-bars">
-              {[...Array(13)].map((_, i) => (
-                <span key={i} className="motif-bar" style={{ height: `${30 + (i % 5) * 14}px` }}>
-                  <small>{i + 1}</small>
-                </span>
-              ))}
             </div>
           </div>
         </div>
