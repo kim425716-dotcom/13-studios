@@ -4,3 +4,4 @@ deployment:
     # Set DEPLOYPATH to your subdomain document root in cPanel (e.g. ~/public_html/13studios or ~/13studios.yourdomain.com)
     - export DEPLOYPATH=$(pwd -P | sed 's|/repositories/.*||')/public_html
     - /bin/cp -R dist/* $DEPLOYPATH 2>/dev/null || /bin/cp -rf dist/* $DEPLOYPATH
+
