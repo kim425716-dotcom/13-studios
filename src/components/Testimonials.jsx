@@ -6,9 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const testimonials = [
   {
-    quote: "13 Studios operates with a level of intentionality that is extraordinarily rare in developer tooling. They unified three fragmented graphics pipelines into one deterministic WebGPU runtime. The digital salon alone catalyzed €4.6M in high-horology transactions within 90 days of deployment.",
+    quote: "13 Studios operates with a level of intentionality that is extraordinarily rare in contemporary design. They elevated our brand from an emerging independent into an undisputed Swiss market benchmark. The digital salon alone catalyzed €4.6M in high-horology sales within 90 days.",
     author: "Julian Croft",
-    title: "Managing Director & Product Lead",
+    title: "Managing Director",
     company: "Chrono Manufacture Geneva",
     location: "Geneva, Switzerland",
     impactMetric: "€4.6M Direct Digital Orders",
@@ -16,22 +16,22 @@ const testimonials = [
     projectRef: "chrono"
   },
   {
-    quote: "Transforming high-frequency telemetry into an interface of calm elegance seemed impossible until we integrated 13 Studios. Their 13-point spatial matrix reduced operator cognitive fatigue by 64% and became the visual showcase of our $38M institutional round.",
+    quote: "Transforming dense grid telemetry into an interface of calm elegance seemed nearly impossible until 13 Studios stepped in. Their 13-point spatial discipline reduced operator cognitive fatigue by 64% and became the visual centerpiece of our $38M institutional round.",
     author: "Dr. Sophia Sterling",
-    title: "VP of Engineering & Product",
+    title: "VP of Product Architecture",
     company: "Solaria Energy Group",
     location: "Stockholm, Sweden",
-    impactMetric: "-64% Operator Load & Latency",
+    impactMetric: "-64% Cognitive Load",
     photo: "assets/team_elena.png",
     projectRef: "solaria"
   },
   {
-    quote: "In institutional private wealth and high-frequency software, discretion and rendering speed are everything. 13 Studios is doing for spatial interfaces what Stripe did for payments. Their runtime commands immediate respect from Fortune 500 boards.",
+    quote: "In institutional private wealth, discretion is everything. Most agencies default to superficial flash; 13 Studios understands structural restraint, typography, and sovereign gravitas. Their work commands immediate respect across family office boards.",
     author: "Marcus Vance",
-    title: "Managing Partner & Investor",
+    title: "Managing Partner",
     company: "Valence Asset Partners",
     location: "London & Zurich",
-    impactMetric: "$1.2B+ Monitored Volume",
+    impactMetric: "$1.2B+ Capital Onboarded",
     photo: "assets/team_marcus.png",
     projectRef: "valence"
   }
@@ -39,6 +39,7 @@ const testimonials = [
 
 export default function Testimonials() {
   const sectionRef = useRef(null);
+  const cardRefs = useRef([]);
 
   useEffect(() => {
     if (!sectionRef.current) return;
@@ -71,17 +72,36 @@ export default function Testimonials() {
           {
             y: 0,
             opacity: 1,
-            duration: 1,
+            duration: 0.8,
             stagger: 0.1,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: header,
-              start: 'top 85%',
+              start: 'top 90%',
               toggleActions: 'play none none none',
             },
           }
         );
       }
+
+      cardRefs.current.forEach((card) => {
+        if (!card) return;
+        gsap.fromTo(
+          card,
+          { y: 60, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      });
     }, sectionRef);
 
     return () => ctx.revert();
@@ -89,50 +109,41 @@ export default function Testimonials() {
 
   return (
     <section ref={sectionRef} id="testimonials" className="testimonials-section">
-      <div className="testimonials-container">
-        {/* Section Header */}
-        <div className="section-header">
-          <div className="section-header-line"></div>
-          <div className="section-header-text">
-            <span className="section-number">03</span>
-            <h2 className="section-title">Enterprise Adoption</h2>
-          </div>
-          <p className="section-header-desc">
-            Direct perspectives from engineering leaders, product executives, and venture partners building with 13 Studios.
+      <div className="section-header">
+        <span className="section-number">03 /</span>
+        <h2 className="section-title">Endorsements</h2>
+        <div className="section-header-line"></div>
+      </div>
+
+      <div className="testimonials-content">
+        <div className="testimonials-intro">
+          <p className="testimonials-lead">
+            What founders, chief product officers, and institutional partners say regarding our architectural rigor and measurable commercial outcomes.
           </p>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="testimonials-grid">
-          {testimonials.map((t, idx) => (
-            <div key={idx} className="testimonial-card startup-quote-card">
-              <div className="t-card-top">
-                <div className="t-card-metric-badge">
-                  <span className="metric-tag">VERIFIED IMPACT</span>
-                  <span className="metric-highlight">{t.impactMetric}</span>
-                </div>
-                <div className="t-card-rating">
-                  {[...Array(5)].map((_, i) => (
-                    <i key={i} className="fa-solid fa-star"></i>
-                  ))}
-                </div>
+          {testimonials.map((item, idx) => (
+            <div
+              key={idx}
+              ref={(el) => (cardRefs.current[idx] = el)}
+              className="testimonial-card"
+            >
+              <div className="testimonial-card-top">
+                <span className="quote-mark">“</span>
+                <span className="testimonial-metric-pill">{item.impactMetric}</span>
               </div>
-
-              <blockquote className="t-card-quote">
-                "{t.quote}"
+              <blockquote className="testimonial-body">
+                {item.quote}
               </blockquote>
-
-              <div className="t-card-author-row">
-                <div
-                  className="t-author-avatar"
-                  style={{ backgroundImage: `url('${t.photo}')` }}
-                ></div>
-                <div className="t-author-meta">
-                  <span className="t-author-name">{t.author}</span>
-                  <span className="t-author-title">{t.title}</span>
-                  <span className="t-author-company">
-                    {t.company} <span className="t-author-loc">({t.location})</span>
-                  </span>
+              <div className="testimonial-author-block">
+                <div className="author-photo-avatar">
+                  <img src={item.photo} alt={item.author} className="author-img" />
+                </div>
+                <div className="author-info">
+                  <span className="author-name">{item.author}</span>
+                  <span className="author-title">{item.title}</span>
+                  <span className="author-company">{item.company} // {item.location}</span>
                 </div>
               </div>
             </div>

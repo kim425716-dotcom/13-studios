@@ -125,12 +125,12 @@ export default function MenuOverlay({ isOpen, onClose }) {
   }, [isOpen]);
 
   const menuItems = [
-    { num: '01', title: 'Platform Overview', href: '#hero' },
-    { num: '02', title: 'Engine Modules', href: '#work' },
-    { num: '03', title: 'Company & Architecture', href: '#studio' },
-    { num: '04', title: 'Enterprise Customers', href: '#testimonials' },
-    { num: '05', title: 'Research & Changelog', href: '#journal' },
-    { num: '06', title: 'Pricing & Sandbox', href: '#contact' },
+    { num: '01', title: 'Home', href: '#hero' },
+    { num: '02', title: 'Selected Work', href: '#work' },
+    { num: '03', title: 'The Studio', href: '#studio' },
+    { num: '04', title: 'Endorsements', href: '#testimonials' },
+    { num: '05', title: 'The Journal', href: '#journal' },
+    { num: '06', title: 'Connect & Inquire', href: '#contact' },
   ];
 
   return (
@@ -142,20 +142,16 @@ export default function MenuOverlay({ isOpen, onClose }) {
       <div ref={contentRef} className="menu-overlay-content">
         <div className="menu-left">
           <div className="menu-meta-item">
-            <span className="meta-label">Global HQ</span>
-            <span className="meta-value">Nairobi (1.1616° S, 36.8263° E)</span>
+            <span className="meta-label">Coordinates</span>
+            <span className="meta-value">1.1616° S, 36.8263° E</span>
           </div>
           <div className="menu-meta-item">
-            <span className="meta-label">Stage</span>
-            <span className="meta-value">Series A // Benchmark & Sequoia Scouts</span>
+            <span className="meta-label">Est.</span>
+            <span className="meta-value">MMXXVI / XIII</span>
           </div>
           <div className="menu-meta-item">
-            <span className="meta-label">Direct Desk</span>
+            <span className="meta-label">Inquiries</span>
             <span className="meta-value">afreakantale@gmail.com</span>
-          </div>
-          <div className="menu-meta-item">
-            <span className="meta-label">Platform CLI</span>
-            <span className="meta-value"><code>npx create-13-app@latest</code></span>
           </div>
         </div>
 

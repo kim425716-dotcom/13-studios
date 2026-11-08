@@ -8,226 +8,219 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     id: 'vapor',
-    title: 'Vapor Engine',
-    client: 'Maison Vapor & Global SaaS Partners',
-    category: 'Core Engine / WebGPU',
-    categorySlug: 'engine',
-    year: 'v2.4',
-    timeline: 'GA Release',
+    title: 'Vapor',
+    client: 'Maison Vapor Paris',
+    category: 'Brand Architecture / Identity',
+    categorySlug: 'brand',
+    year: '2026',
+    timeline: '14 Weeks',
     image: 'assets/project_vapor.png',
     gallery: ['assets/studio_craft.png', 'assets/blog_minimalism.png'],
     cursorMode: 'explore',
-    npmPkg: '@13studios/vapor',
-    tagline: 'Sub-millisecond WebGPU particle physics and procedural material shaders for interactive 3D web applications.',
-    challenge: 'Enterprise web applications struggle to deliver immersive 3D graphics and fluid particle physics without crippling mobile browser framerates, exhausting device batteries, and blowing initial bundle budgets beyond 15MB.',
-    solution: 'We engineered Vapor Engine as a Rust-compiled WebAssembly runtime driving native WebGPU pipelines. It executes compute shaders directly on client GPUs with zero garbage collection spikes and sub-100KB initial bundle overhead.',
+    tagline: 'Olfactory minimalism distilled into an international tactile brand identity and WebGL sensory archive.',
+    challenge: 'Maison Vapor required a modern visual identity that conveyed subtle exclusivity without resorting to traditional gold-leaf luxury clichés, appealing to high-net-worth design patrons across Paris, Tokyo, and New York.',
+    solution: 'We engineered an identity based on translucent materiality, negative-space typography, and custom glass vessel packaging, paired with a WebGL sensory canvas simulating fragrance dissipation in real-time.',
     metrics: [
-      { value: '+142%', label: 'D2C Conversion Lift', desc: 'Observed across enterprise deployments' },
-      { value: '3.4×', label: 'Session Dwell Time', desc: 'Average user interaction benchmark' },
-      { value: '<1.2ms', label: 'Frame Compute Budget', desc: 'Consistent 120 FPS render loop' }
+      { value: '+142%', label: 'D2C Conversion', desc: 'Direct digital sales post-launch' },
+      { value: '3.4×', label: 'Dwell Time', desc: 'Average WebGL interaction session' },
+      { value: 'Wallpaper*', label: 'Design Awards', desc: 'Best Packaging Identity 2026' }
     ],
     deliverables: [
-      'WebGPU Compute & Fragment Shaders',
-      'Rust-to-WASM Particle Simulator',
-      'Procedural Glass & Materiality Shaders',
-      'Zero-Copy Framebuffer Pipeline',
-      'Universal Fallback for WebGL2'
+      'Brand Architecture & Strategy',
+      'Bespoke Display Typography',
+      'Tactile Secondary Packaging',
+      'Real-Time WebGL Sensory Experience',
+      'Global Retail Spatial Guidelines'
     ],
     testimonial: {
-      quote: '13 Studios Vapor Engine allowed us to stream high-precision sensory 3D models directly in mobile browsers with zero lag. It completely shattered our legacy retail conversion records.',
+      quote: '13 Studios distilled our vision into an identity of breathtaking restraint. The digital flagship outperforms every legacy retail benchmark.',
       author: 'Éloïse Laurent',
-      title: 'Head of Digital Product, Maison Vapor Paris'
+      title: 'Creative Director'
     }
   },
   {
     id: 'aero',
-    title: 'Aero Compiler',
-    client: 'Aero Technologies & Enterprise Devs',
-    category: 'AI & Compiler / Layout',
-    categorySlug: 'compiler',
-    year: 'v2.4',
-    timeline: 'GA Release',
+    title: 'Aero',
+    client: 'Aero Technologies Zürich',
+    category: 'Motion / Art Direction',
+    categorySlug: 'motion',
+    year: '2025',
+    timeline: '10 Weeks',
     image: 'assets/project_aero.png',
     gallery: ['assets/blog_fluidity.png', 'assets/project_solaria.png'],
     cursorMode: 'play',
-    npmPkg: '@13studios/aero',
-    tagline: 'Autonomous design-to-code compiler translating complex spatial canvas models into production React/TypeScript code.',
-    challenge: 'Handoff between product designers and front-end engineers loses 40% of interaction fidelity and introduces endless weeks of manual CSS micro-tuning, braking velocity at high-growth engineering teams.',
-    solution: 'Aero Compiler ingests Figma and spatial design files, parses semantic geometry via AST graphs, and outputs clean, accessible, zero-runtime React & Tailwind components with physics-calibrated GSAP animation hooks.',
+    tagline: 'Physics-based aerodynamic simulations translated into a generative identity and motion language.',
+    challenge: 'Aero Technologies required an ultra-clean visual narrative to explain complex multi-physics turbulent airflow engineering to sovereign wealth funds and aerospace partners.',
+    solution: 'Using custom computational velocity vector mapping and GPU shaders, we turned dry simulation data into striking cinematic choreography, defining their entire global brand presence.',
     metrics: [
-      { value: '3.8M+', label: 'Components Compiled', desc: 'Across production engineering pipelines' },
-      { value: '-75%', label: 'Sprint Cycle Overhead', desc: 'Drastically cuts design-to-code drift' },
-      { value: '$65M', label: 'Engineering Value Unlocked', desc: 'Demonstrated developer hours saved' }
+      { value: '3.8M+', label: 'Global Impressions', desc: 'Across tech & industrial keynotes' },
+      { value: '$65M', label: 'Series C Facilitation', desc: 'Institutional capital secured' },
+      { value: 'Red Dot', label: 'Best of the Best', desc: 'Industrial Motion Direction 2025' }
     ],
     deliverables: [
-      'Abstract Syntax Tree (AST) Parser',
-      'Semantic Token Transpiler',
-      'Auto-Layout Spring Physics Solver',
-      'Automated Git Commit & CI/CD Action',
-      'TypeScript Strict Type Validator'
+      'Generative Vector Physics Engine',
+      'Cinema 4D Art Direction',
+      'Brand Motion Principles & Easing Tokens',
+      'Investor Visual Monograph',
+      'Keynote Interactive Canvas'
     ],
     testimonial: {
-      quote: 'Aero Compiler took our multi-physics aerodynamic simulation frontends and compiled them into perfect production code. What took three engineers 8 weeks now happens in 40 seconds.',
+      quote: 'They took aerodynamic equations and made them poetic. The brand presentation unified our engineering credibility with institutional prestige.',
       author: 'Dr. Henrik Lindqvist',
-      title: 'CTO, Aero Technologies Zürich'
+      title: 'Chief Technology Officer'
     }
   },
   {
     id: 'chrono',
-    title: 'Chrono OS',
-    client: 'Chrono Manufacture & Fintech Unicorns',
-    category: 'Developer SDK / State',
-    categorySlug: 'sdk',
-    year: 'v2.4',
-    timeline: 'GA Release',
+    title: 'Chrono',
+    client: 'Chrono Manufacture Geneva',
+    category: 'Digital Platforms / UI-UX',
+    categorySlug: 'digital',
+    year: '2026',
+    timeline: '16 Weeks',
     image: 'assets/project_chrono.png',
     gallery: ['assets/client_julian.png', 'assets/blog_structure.png'],
     cursorMode: 'view',
-    npmPkg: '@13studios/chrono',
-    tagline: 'Deterministic micro-mechanical state synchronizer and 60fps motion physics engine for mission-critical apps.',
-    challenge: 'Mission-critical fintech and luxury digital salons require sub-frame deterministic UI synchronization across distributed clients without UI flicker or state divergence during high-volatility events.',
-    solution: 'Chrono OS implements a Conflict-Free Replicated Data Type (CRDT) engine with micro-second event ordering, coupled with hardware-accelerated spring physics that maintain absolute tactile precision.',
+    tagline: 'High-horology digital flagship featuring a real-time mechanical escapement configurator.',
+    challenge: 'Swiss luxury watchmaker Chrono sought to modernize their private client buying experience, bridging centuries-old hand-finishing craftsmanship with an immaculate digital touchpoint.',
+    solution: 'We developed a 60fps micro-mechanical 3D configurator rendered on the 13-point architectural grid, accompanied by an editorial private-salon booking platform for collectors.',
     metrics: [
-      { value: '99.999%', label: 'State Consistency', desc: 'Zero drift during global concurrent sessions' },
-      { value: '€4.6M', label: 'Digital Order Volume', desc: 'Handled in the first 90 days of release' },
-      { value: '<4ms', label: 'Sync Network Latency', desc: 'Global peer-to-peer event propagation' }
+      { value: '+210%', label: 'Private Salon Inquiries', desc: 'Bespoke timepiece consultations' },
+      { value: '€4.6M', label: 'Digital Order Volume', desc: 'Within first 90 days of release' },
+      { value: 'FWA', label: 'Site of the Day', desc: 'Awarded for precision WebGL fidelity' }
     ],
     deliverables: [
-      'Deterministic CRDT State Engine',
-      'Micro-Mechanical 3D Escapement Rig',
-      'Sub-Frame Input Interpolation',
-      'Cryptographic Biometric Auth Bridge',
-      'Multi-Currency Real-Time Settlement Protocol'
+      'Digital Flagship UX/UI Architecture',
+      'Real-Time 3D Tourbillon Configurator',
+      'Bespoke Haute Horology Typography',
+      'Collector Private Salon Portal',
+      'Multi-Currency Settlement Interface'
     ],
     testimonial: {
-      quote: '13 Studios Chrono OS allowed our collectors to inspect mechanical escapements down to the micrometer and execute high-value transactions with zero latency.',
+      quote: '13 Studios respected our 120-year pedigree while positioning our digital presence decades ahead of our competition.',
       author: 'Julian Croft',
-      title: 'Managing Director, Chrono Manufacture Geneva'
+      title: 'Managing Director'
     }
   },
   {
     id: 'aether',
-    title: 'Aether Spatial',
-    client: 'Aether Spatial & Hardware Partners',
-    category: 'Core Engine / Spatial',
-    categorySlug: 'engine',
-    year: 'v2.4',
-    timeline: 'GA Release',
+    title: 'Aether',
+    client: 'Aether Spatial Atelier Tokyo',
+    category: 'Spatial / Architecture',
+    categorySlug: 'motion',
+    year: '2026',
+    timeline: '12 Weeks',
     image: 'assets/project_aether.png',
-    gallery: ['assets/blog_minimalism.png', 'assets/studio_atelier.png'],
+    gallery: ['assets/hero_architecture.png', 'assets/studio_atelier.png'],
     cursorMode: 'explore',
-    npmPkg: '@13studios/aether',
-    tagline: 'Adaptive Level-of-Detail 3D mesh streaming engine delivering browser-native spatial computing under 50KB initial payload.',
-    challenge: 'Streaming complex spatial geometry and photorealistic 3D assets to heterogeneous consumer devices causes excessive memory bloat, long loading screens, and thermal throttling on mobile GPUs.',
-    solution: 'Aether Spatial utilizes octree volumetric geometry partitioning, WASM Draco streaming, and progressive asset streaming to render massive scenes immediately while streaming higher polygon detail on demand.',
+    tagline: 'Spatial computing interfaces and digital monograph for Tokyo architectural pavilions.',
+    challenge: 'Aether needed a spatial digital monograph that translated the tangible tactility of cast concrete, cedar wood, and light infiltration into a high-framerate web exhibition.',
+    solution: 'We created an editorial canvas governed by strict Japanese architectural balance, dynamic light-shadow raymarching, and spatial audio cues.',
     metrics: [
-      { value: '-82%', label: 'Asset Payload Size', desc: 'Progressive LOD geometric streaming' },
-      { value: '120 FPS', label: 'Fluidity on Mobile', desc: 'Zero frame drops on modern mobile GPUs' },
-      { value: '500k+', label: 'Concurrent Mesh Nodes', desc: 'Stress-tested architectural canvas' }
+      { value: '99.2%', label: 'Collector Approval', desc: 'Global architecture jury rating' },
+      { value: 'Awwwards', label: 'Site of the Day', desc: 'Design Excellence & Architectural Poise' },
+      { value: '4.8×', label: 'Editorial Sharing', desc: 'Featured in 40+ international journals' }
     ],
     deliverables: [
-      'Octree Volumetric LOD Partitioner',
-      'Draco WebAssembly Mesh Decompressor',
-      'Progressive Texture Streamer',
-      'Headless Scene Graph Orchestrator',
-      'WebXR & VisionOS Spatial Bridge'
+      'Spatial Interactive Web Monograph',
+      'Sound Architecture & Sonic Identity',
+      'Curatorial Editorial Layout',
+      'Dynamic Light Shading Shaders',
+      'Printed Exhibition Compendium'
     ],
     testimonial: {
-      quote: 'Aether Spatial gives us the rendering power of a native game engine directly inside standard web browsers. It is the gold standard for spatial computing infrastructure.',
-      author: 'Kenji Sato',
-      title: 'VP of Spatial Architecture, Aether Tokyo'
+      quote: 'Their spatial sensibility is unmatched. They translated physical architectural silence into a digital medium with immense poise.',
+      author: 'Kenji Takahashi',
+      title: 'Lead Architect'
     }
   },
   {
     id: 'solaria',
-    title: 'Solaria Sentinel',
-    client: 'Solaria Energy Group & Enterprise Orgs',
-    category: 'Edge & Cloud / Security',
-    categorySlug: 'cloud',
-    year: 'v2.4',
-    timeline: 'GA Release',
+    title: 'Solaria',
+    client: 'Solaria Energy Group Stockholm',
+    category: 'Digital Platforms / UI-UX',
+    categorySlug: 'digital',
+    year: '2025',
+    timeline: '14 Weeks',
     image: 'assets/project_solaria.png',
-    gallery: ['assets/project_valence.png', 'assets/team_elena.png'],
+    gallery: ['assets/blog_structure.png', 'assets/project_aero.png'],
     cursorMode: 'view',
-    npmPkg: '@13studios/solaria',
-    tagline: 'Enterprise cryptographic asset signing, immutable design token history, and zero-trust edge access control.',
-    challenge: 'Enterprise infrastructure teams require strict SOC2 Type II compliance, immutable audit logging, and cryptographic verification of all front-end assets to prevent supply chain tampering and unauthorized asset drifts.',
-    solution: 'Solaria Sentinel embeds cryptographic SHA-256 signatures and hardware security key validation into the 13 Studios deployment pipeline, creating an unforgeable audit trail for every asset, token, and edge route.',
+    tagline: 'Decentralized renewable grid operating console and telemetry monitoring interface.',
+    challenge: 'Managing thousands of high-output grid nodes required an intuitive, zero-latency visual operating system capable of presenting terabytes of energy telemetry without cognitive fatigue.',
+    solution: 'We implemented a dark-mode precision dashboard utilizing high-density micro-charts, ergonomic typography, and instant status triage workflows designed for 24/7 mission-critical operations.',
     metrics: [
-      { value: '-64%', label: 'Audit Turnaround', desc: 'Instant cryptographic compliance export' },
-      { value: 'Zero', label: 'Security Vulnerabilities', desc: 'SOC2 Type II certified edge pipeline' },
-      { value: '100%', label: 'Immutable Provenance', desc: 'Cryptographically verified build manifests' }
+      { value: '-64%', label: 'Cognitive Load', desc: 'Reduction in operator response time' },
+      { value: '$38M', label: 'Series B Round', desc: 'Showcasing interface to investors' },
+      { value: '99.99%', label: 'Interface Uptime', desc: 'Built on resilient edge architecture' }
     ],
     deliverables: [
-      'Cryptographic Asset Hash Verification',
-      'SOC2 Type II Automated Audit Vault',
-      'SAML 2.0 & Okta Enterprise SSO Bridge',
-      'Role-Based Granular Access Control (RBAC)',
-      'Anycast DDoS & Supply-Chain Shield'
+      'Enterprise Telemetry Dashboard',
+      'Design System (200+ Components)',
+      'Data Visualization Architecture',
+      'Dark Mode Ergonomic Palette',
+      'Real-Time WebSocket Stream System'
     ],
     testimonial: {
-      quote: 'Solaria Sentinel gave our security compliance board complete confidence. It reduced our enterprise onboarding review cycle from months to 48 hours.',
+      quote: '13 Studios converted an overwhelmingly dense telemetry feed into an interface of singular clarity and beauty.',
       author: 'Dr. Sophia Sterling',
-      title: 'VP of Engineering, Solaria Energy Group'
+      title: 'VP of Product'
     }
   },
   {
     id: 'valence',
-    title: 'Valence Telemetry',
-    client: 'Valence Asset Partners & Scale SaaS',
-    category: 'Edge & Cloud / Analytics',
-    categorySlug: 'cloud',
-    year: 'v2.4',
-    timeline: 'GA Release',
+    title: 'Valence',
+    client: 'Valence Asset Partners London',
+    category: 'Brand Architecture / Identity',
+    categorySlug: 'brand',
+    year: '2026',
+    timeline: '12 Weeks',
     image: 'assets/project_valence.png',
-    gallery: ['assets/team_marcus.png', 'assets/hero_architecture.png'],
+    gallery: ['assets/studio_craft.png', 'assets/project_chrono.png'],
     cursorMode: 'explore',
-    npmPkg: '@13studios/valence',
-    tagline: 'Real-time spatial observability, cognitive friction heatmaps, and on-device ML anomaly detection.',
-    challenge: 'Traditional web analytics track simple page clicks without measuring spatial attention, user comprehension friction, or render pipeline bottlenecks that silently kill user conversion in high-stakes software.',
-    solution: 'Valence Telemetry captures 120Hz micro-interaction coordinates, computes cognitive dwell vectors on-device, and streams encrypted telemetry back to our edge analytics pipeline in under 2ms.',
+    tagline: 'Algorithmic private wealth portal and brand architecture for ultra-high-net-worth family offices.',
+    challenge: 'Valence needed to establish sovereign credibility for an algorithmic multi-asset management system, conveying uncompromising institutional security and quiet discretion.',
+    solution: 'We formulated a refined brand architecture marrying obsidian and brushed steel textures with razor-sharp editorial typography and a bespoke encrypted portfolio viewer.',
     metrics: [
-      { value: '$1.2B+', label: 'Enterprise GMV Monitored', desc: 'Securely analyzed in real-time' },
-      { value: '2.4×', label: 'Conversion Lift', desc: 'Achieved through predictive friction removal' },
-      { value: '<2ms', label: 'Telemetry Edge Overhead', desc: 'Zero degradation to host application thread' }
+      { value: '$1.2B+', label: 'AUM Onboarded', desc: 'Capital allocated through new platform' },
+      { value: '100%', label: 'Institutional Adoption', desc: 'Across top 25 family offices' },
+      { value: 'TDC', label: 'Typographic Distinction', desc: 'Bespoke tabular numeral suite' }
     ],
     deliverables: [
-      'On-Device Vector Heatmap Engine',
-      'Cognitive Friction Index (CFI) Analyzer',
-      'Edge-Aggregated Anomaly Alerts',
-      'Full Privacy-Compliant Zero-PII Pipeline',
-      'Native Datadog & Snowflake Connectors'
+      'Institutional Brand Identity',
+      'Private Wealth Portal UX',
+      'Custom Monospaced Financial Typeface',
+      'Encrypted Client Reporting System',
+      'Physical Metal Credential Kits'
     ],
     testimonial: {
-      quote: 'Valence Telemetry is the telemetry tool we always wished existed for high-end digital products. It exposes user confusion before it ever turns into customer churn.',
+      quote: 'Discretion and authority were our non-negotiables. 13 Studios executed our brand at a level that commands immediate institutional respect.',
       author: 'Marcus Vance',
-      title: 'Managing Partner, Valence Asset Partners'
+      title: 'Managing Partner'
     }
   }
 ];
 
-const categoryTabs = [
-  { id: 'all', label: 'All Modules' },
-  { id: 'engine', label: 'Core Engine' },
-  { id: 'compiler', label: 'AI & Compiler' },
-  { id: 'sdk', label: 'Developer SDK' },
-  { id: 'cloud', label: 'Edge & Cloud' }
+const categories = [
+  { id: 'all', label: 'All Works (6)' },
+  { id: 'brand', label: 'Brand Architecture' },
+  { id: 'digital', label: 'Digital Platforms' },
+  { id: 'motion', label: 'Motion & Spatial' }
 ];
 
 export default function Work() {
+  const sectionRef = useRef(null);
+  const cardRefs = useRef([]);
   const [activeCategory, setActiveCategory] = useState('all');
   const [selectedProject, setSelectedProject] = useState(null);
-  const sectionRef = useRef(null);
-  const workGridRef = useRef(null);
 
   const filteredProjects = activeCategory === 'all'
     ? projects
-    : projects.filter(p => p.categorySlug === activeCategory);
+    : projects.filter((p) => p.categorySlug === activeCategory);
 
   useEffect(() => {
-    if (!sectionRef.current) return;
-
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     const ctx = gsap.context(() => {
+      // Header line and title animation
       const header = sectionRef.current.querySelector('.section-header');
       const line = header?.querySelector('.section-header-line');
       const title = header?.querySelector('.section-title');
@@ -255,155 +248,200 @@ export default function Work() {
           {
             y: 0,
             opacity: 1,
-            duration: 1,
+            duration: 0.8,
             stagger: 0.1,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: header,
-              start: 'top 85%',
+              start: 'top 90%',
               toggleActions: 'play none none none',
             },
           }
         );
       }
 
-      // Parallax on project cards
-      const cards = sectionRef.current.querySelectorAll('.work-card');
-      cards.forEach((card) => {
-        const img = card.querySelector('.work-card-img');
-        if (img) {
-          gsap.fromTo(
-            img,
-            { y: '-8%' },
-            {
-              y: '8%',
-              ease: 'none',
-              scrollTrigger: {
-                trigger: card,
-                start: 'top bottom',
-                end: 'bottom top',
-                scrub: true,
-              },
-            }
-          );
-        }
+      // Card reveals
+      cardRefs.current.forEach((card) => {
+        if (!card) return;
+        gsap.fromTo(
+          card,
+          { y: 80, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1.0,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 88%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
       });
     }, sectionRef);
 
-    return () => ctx.revert();
-  }, [activeCategory]);
+    // 3D Perspective Tilt on Hover (13-degree motif)
+    const cleanupListeners = [];
+    if (!isTouchDevice) {
+      cardRefs.current.forEach((card) => {
+        if (!card) return;
+        const inner = card.querySelector('.project-card-inner');
+        if (!inner) return;
+
+        const onMouseMove = (e) => {
+          const rect = card.getBoundingClientRect();
+          const cardWidth = rect.width;
+          const cardHeight = rect.height;
+
+          const mouseX = e.clientX - rect.left;
+          const mouseY = e.clientY - rect.top;
+
+          const xPct = mouseX / cardWidth - 0.5;
+          const yPct = mouseY / cardHeight - 0.5;
+
+          const maxTilt = 10;
+          const rotateY = xPct * maxTilt;
+          const rotateX = -yPct * maxTilt;
+
+          gsap.to(inner, {
+            rotateX: rotateX,
+            rotateY: rotateY,
+            scale: 1.02,
+            duration: 0.4,
+            ease: 'power2.out',
+            transformPerspective: 1000,
+          });
+        };
+
+        const onMouseLeave = () => {
+          gsap.to(inner, {
+            rotateX: 0,
+            rotateY: 0,
+            scale: 1,
+            duration: 0.6,
+            ease: 'power3.out',
+          });
+        };
+
+        card.addEventListener('mousemove', onMouseMove);
+        card.addEventListener('mouseleave', onMouseLeave);
+
+        cleanupListeners.push(() => {
+          card.removeEventListener('mousemove', onMouseMove);
+          card.removeEventListener('mouseleave', onMouseLeave);
+        });
+      });
+    }
+
+    return () => {
+      ctx.revert();
+      cleanupListeners.forEach((cleanup) => cleanup());
+    };
+  }, [filteredProjects]);
+
+  const handleOpenCaseStudy = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseCaseStudy = () => {
+    setSelectedProject(null);
+  };
+
+  const handleNextProject = () => {
+    if (!selectedProject) return;
+    const currentIndex = projects.findIndex((p) => p.id === selectedProject.id);
+    const nextIndex = (currentIndex + 1) % projects.length;
+    setSelectedProject(projects[nextIndex]);
+  };
 
   return (
     <section ref={sectionRef} id="work" className="work-section">
-      <div className="work-container">
-        {/* Section Header */}
-        <div className="section-header">
-          <div className="section-header-line"></div>
-          <div className="section-header-text">
-            <span className="section-number">01</span>
-            <h2 className="section-title">Platform Modules</h2>
-          </div>
-          <p className="section-header-desc">
-            The 13 Studios cloud and client-side ecosystem: high-performance WebGPU engines, autonomous design-to-code compilers, and deterministic edge runtimes.
-          </p>
-        </div>
+      <div className="section-header">
+        <span className="section-number">01 /</span>
+        <h2 className="section-title">Selected Work</h2>
+        <div className="section-header-line"></div>
+      </div>
 
-        {/* Startup Category Tabs */}
-        <div className="work-filter-bar">
-          <div className="work-filter-pills" role="tablist">
-            {categoryTabs.map((tab) => (
-              <button
-                key={tab.id}
-                role="tab"
-                aria-selected={activeCategory === tab.id}
-                className={`filter-pill-btn ${activeCategory === tab.id ? 'active' : ''}`}
-                onClick={() => setActiveCategory(tab.id)}
-              >
-                <span>{tab.label}</span>
-                {tab.id === 'all' && <span className="tab-count">{projects.length}</span>}
-              </button>
-            ))}
-          </div>
-          <span className="filter-summary">
-            Showing {filteredProjects.length} production modules • v2.4 Enterprise
-          </span>
-        </div>
-
-        {/* Modules Grid */}
-        <div ref={workGridRef} className="work-grid">
-          {filteredProjects.map((p, idx) => (
-            <article
-              key={p.id}
-              className={`work-card work-card-${p.id}`}
-              onClick={() => setSelectedProject(p)}
-              role="button"
-              tabIndex={0}
-              aria-label={`Inspect ${p.title} architecture`}
+      {/* Filter Tabs & Section Overview */}
+      <div className="work-controls-wrap">
+        <p className="work-section-intro">
+          A curated compendium of commissioned brand architectures, digital flagships, and spatial motion systems developed under the 13-point discipline.
+        </p>
+        <div className="category-filter-pills" role="tablist">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              role="tab"
+              aria-selected={activeCategory === cat.id}
+              className={`filter-pill ${activeCategory === cat.id ? 'is-active' : ''}`}
+              onClick={() => setActiveCategory(cat.id)}
             >
-              <div className="work-card-inner">
-                {/* Visual Canvas Container */}
-                <div className="work-card-visual">
-                  <div
-                    className="work-card-img"
-                    style={{ backgroundImage: `url('${p.image}')` }}
-                  ></div>
-                  <div className="work-card-overlay"></div>
-                  
-                  {/* Badge & Inspect Button */}
-                  <div className="work-card-badges">
-                    <span className="card-badge-version">{p.year}</span>
-                    <span className="card-badge-category">{p.category}</span>
-                  </div>
-
-                  <div className="work-card-action">
-                    <span className="action-pill">
-                      <i className="fa-solid fa-code"></i>
-                      <span>Inspect Architecture</span>
-                    </span>
-                  </div>
-                </div>
-
-                {/* Card Meta Content */}
-                <div className="work-card-content">
-                  <div className="work-card-top-row">
-                    <span className="work-card-index">MODULE {String(idx + 1).padStart(2, '0')}</span>
-                    <span className="work-card-pkg"><code>{p.npmPkg}</code></span>
-                  </div>
-
-                  <h3 className="work-card-title">{p.title}</h3>
-                  <p className="work-card-tagline">{p.tagline}</p>
-
-                  {/* Quantitative Benchmark Row */}
-                  <div className="work-card-metrics-strip">
-                    {p.metrics.map((m, mIdx) => (
-                      <div key={mIdx} className="work-mini-metric">
-                        <span className="mini-metric-val">{m.value}</span>
-                        <span className="mini-metric-lbl">{m.label}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Footer link */}
-                  <div className="work-card-footer">
-                    <span className="work-card-view-link">
-                      <span>View Specifications & Benchmark</span>
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </article>
+              {cat.label}
+            </button>
           ))}
         </div>
       </div>
 
-      {/* Module Architecture & Specs Modal */}
-      {selectedProject && (
-        <CaseStudyModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
+      {/* Portfolio Grid */}
+      <div className="portfolio-grid">
+        {filteredProjects.map((project, idx) => (
+          <div
+            key={project.id}
+            ref={(el) => (cardRefs.current[idx] = el)}
+            className="project-card"
+            data-cursor-mode={project.cursorMode}
+            data-project={project.id}
+            onClick={() => handleOpenCaseStudy(project)}
+          >
+            <div className="project-card-inner">
+              <div className="project-image-wrap">
+                <img
+                  src={project.image}
+                  alt={`${project.title} — ${project.category}`}
+                  className="project-image"
+                  loading="lazy"
+                />
+                <div className="project-hover-overlay">
+                  <span className="project-hover-cta">
+                    Explore Case Study <i className="fa-solid fa-arrow-right"></i>
+                  </span>
+                </div>
+                {project.metrics?.[0] && (
+                  <div className="project-card-badge">
+                    <span className="badge-val">{project.metrics[0].value}</span>
+                    <span className="badge-lbl">{project.metrics[0].label}</span>
+                  </div>
+                )}
+              </div>
+              <div className="project-info">
+                <div className="project-meta">
+                  <span className="project-category">{project.category}</span>
+                  <span className="project-year">{project.year}</span>
+                </div>
+                <div className="project-title-row">
+                  <h3 className="project-title">{project.title}</h3>
+                  <span className="project-client-name">{project.client}</span>
+                </div>
+                <p className="project-card-tagline">{project.tagline}</p>
+                <div className="project-card-footer">
+                  <span className="project-cta-link underline-hover">
+                    View Case Study <i className="fa-solid fa-arrow-right-long"></i>
+                  </span>
+                  <span className="project-timeline-tag">{project.timeline}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Case Study Modal */}
+      <CaseStudyModal
+        project={selectedProject}
+        onClose={handleCloseCaseStudy}
+        onSelectNext={handleNextProject}
+      />
     </section>
   );
 }

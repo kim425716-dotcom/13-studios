@@ -1,34 +1,30 @@
 import React from 'react';
 
 const partners = [
-  { name: 'Benchmark Capital', location: 'San Francisco', type: 'Series A Lead' },
-  { name: 'Sequoia Scout', location: 'Menlo Park', type: 'Seed Partner' },
-  { name: 'Stripe Ecosystem', location: 'San Francisco', type: 'Fintech Infrastructure' },
-  { name: 'Linear Guild', location: 'San Francisco', type: 'Developer Workflow' },
-  { name: 'Figma Community Fund', location: 'San Francisco', type: 'Design Systems' },
-  { name: 'Vercel Edge Network', location: 'San Francisco', type: 'Serverless Runtime' },
-  { name: 'OpenAI Startup Cohort', location: 'San Francisco', type: 'AI Acceleration' },
-  { name: 'Koben Spatial Systems', location: 'Geneva', type: 'Precision Engineering' },
-  { name: 'Verve Autonomous', location: 'Berlin', type: 'Robotics & Vision' },
-  { name: 'Datadog Tech Alliance', location: 'New York', type: 'Real-time Observability' },
-  { name: 'Cloudflare Workers Network', location: 'Austin', type: 'Anycast Edge' },
-  { name: 'Snowflake Data Cloud', location: 'Bozeman', type: 'Distributed Analytics' },
+  { name: 'Koben Horology', location: 'Geneva', type: 'Haute Horology' },
+  { name: 'Aura Capital', location: 'London', type: 'Private Equity' },
+  { name: 'Verve Mobility', location: 'Berlin', type: 'Autonomous Tech' },
+  { name: 'Aether Spatial', location: 'Tokyo', type: 'Spatial Computing' },
+  { name: 'Lumina Biosystems', location: 'San Francisco', type: 'Health & Science' },
+  { name: 'Maison Vapor', location: 'Paris', type: 'Luxury Fragrance' },
+  { name: 'Kinetic Global', location: 'Singapore', type: 'Renewable Infrastructure' },
+  { name: 'Nordic Media House', location: 'Stockholm', type: 'Editorial Publishing' },
 ];
 
 const accolades = [
-  { award: 'SOC2 Type II', title: 'Enterprise Security & Audit Certified', year: '2026' },
-  { award: 'Product Hunt', title: '#1 Developer Product of the Month', year: '2025' },
-  { award: 'G2 Leader', title: 'Top Performer: Spatial Web & WebGPU', year: '2026' },
-  { award: 'Red Dot', title: 'Best Industrial Software Architecture', year: '2025' },
-  { award: 'ISO 27001', title: 'Global Information Security Standard', year: '2026' },
+  { award: 'Awwwards', title: 'Site of the Day (×3)', year: '2025/2026' },
+  { award: 'FWA', title: 'FWA of the Day (×2)', year: '2025' },
+  { award: 'TDC', title: 'Type Directors Club Distinction', year: '2026' },
+  { award: 'Red Dot', title: 'Best of the Best — Brand Architecture', year: '2025' },
+  { award: 'Webby', title: 'Nominee — Best Visual Design & Motion', year: '2026' },
 ];
 
 export default function PartnerTicker() {
   return (
-    <section className="partner-ticker-section" aria-label="Institutional Backers, Enterprise Customers & Certifications">
+    <section className="partner-ticker-section" aria-label="Institutional Collaborations and Recognition">
       <div className="ticker-header-wrapper">
-        <span className="ticker-badge">Venture Backing & Enterprise Adoption</span>
-        <span className="ticker-sub">Powering mission-critical front-ends at 1,400+ high-growth tech teams</span>
+        <span className="ticker-badge">Selected Collaborations & Accolades</span>
+        <span className="ticker-sub">Partnering with market-defining institutions worldwide</span>
       </div>
 
       <div className="ticker-track-container">
@@ -48,12 +44,9 @@ export default function PartnerTicker() {
       <div className="accolades-strip">
         <div className="accolades-inner">
           {accolades.map((a, idx) => (
-            <div key={`accolade-${idx}`} className="accolade-card startup-cert-card">
-              <div className="cert-badge-icon">
-                <i className="fa-solid fa-shield-halved"></i>
-              </div>
+            <div key={`accolade-${idx}`} className="accolade-card">
+              <span className="accolade-org">{a.award}</span>
               <div className="accolade-details">
-                <span className="accolade-org">{a.award}</span>
                 <span className="accolade-title">{a.title}</span>
                 <span className="accolade-year">{a.year}</span>
               </div>
@@ -64,3 +57,4 @@ export default function PartnerTicker() {
     </section>
   );
 }
+

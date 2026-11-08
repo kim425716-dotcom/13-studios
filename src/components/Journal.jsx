@@ -8,27 +8,27 @@ gsap.registerPlugin(ScrollTrigger);
 const articles = [
   {
     id: 1,
-    category: 'Systems Architecture',
+    category: 'Design Philosophy',
     date: 'June 2026',
     readTime: '6 min read',
-    author: 'Brian Kimani, Co-Founder & CEO',
+    author: 'Brian Kimani, Executive Creative Director',
     authorPhoto: 'assets/team_brian.png',
-    title: 'The Restraint of Minimalism in Enterprise Software Architecture',
+    title: 'The Restraint of Minimalism',
     excerpt:
-      'Why stripping away client-side JavaScript bloat and embracing mathematical grid discipline unlocks sub-10ms user experiences.',
+      'Exploring how negative space and deliberate omission create emotional resonance in modern branding systems.',
     image: 'assets/blog_minimalism.png',
     content: [
       {
         type: 'p',
-        text: 'In contemporary software engineering, the prevailing instinct is additive. When an interface feels sluggish or uninspired, teams routinely install heavier client libraries, append deeper component abstractions, or layer louder telemetry bundles. Yet the world’s most enduring systems are defined not by what they contain, but by what they refuse to tolerate.'
+        text: 'In contemporary brand engineering, the prevailing instinct is additive. When an interface fails to convert or a brand feels indistinct, conventional advisory counsels adding further ornament, additional explanatory copy, or louder visual indicators. Yet true luxury has never resided in excess.'
       },
       {
         type: 'h2',
-        text: 'The Cost of Framework Churn'
+        text: 'The Currency of White Space'
       },
       {
         type: 'p',
-        text: 'Every kilobyte of untracked JavaScript incurs a triple penalty: parsing latency on budget mobile chips, memory overhead in browser garbage collection, and cognitive friction for the user. In high-stakes enterprise applications—whether executing real-time financial trades or rendering spatial CAD models—delay is indistinguishable from error.'
+        text: 'White space is not emptiness; it is an active architectural element. In a physical gallery, the distance between exhibited artworks is as deliberate as the lighting. In digital canvases, generous padding and calm margins signal confidence and stability. An institution that dares to leave two-thirds of the viewport uncluttered communicates that its value is self-evident.'
       },
       {
         type: 'quote',
@@ -37,126 +37,120 @@ const articles = [
       },
       {
         type: 'h2',
-        text: 'Three Core Tenets of the 13 Engine'
+        text: 'Three Tenets of Structural Reduction'
       },
       {
         type: 'list',
         items: [
-          'Sub-100KB Baseline: The entire 13 Studios core runtime weighs under 94KB compressed, loading before the first TCP packet finishes round-tripping.',
-          'Zero Garbage Collection Spikes: By compiling critical layout engines and physics simulators to Rust and WebAssembly, we bypass browser GC pauses entirely.',
-          'Calm Velocity: Never compete with the user’s cognitive focus; guide attention with deterministic mathematical pacing.'
+          'Singular Focal Point: Every viewport must possess exactly one undisputed hierarchy anchor.',
+          'Typographic Hierarchy over Ornamental Borders: Rely on scale and weight rather than decorative dividers.',
+          'Calm Velocity: Never compete with the user’s cognitive flow; guide attention with deliberate pace.'
         ]
       },
       {
         type: 'p',
-        text: 'When we architected the 13 Studios platform, our benchmark was not current web standards, but the responsiveness of bare-metal operating systems. The outcome is software that feels as instantaneous as thought.'
+        text: 'When we designed the identity for Maison Vapor, our first decision was removing 80% of traditional cosmetic labeling. The result was not a void, but a presence of singular clarity.'
       }
     ]
   },
   {
     id: 2,
-    category: 'WebGPU & Compilers',
+    category: 'Motion Design',
     date: 'May 2026',
     readTime: '8 min read',
-    author: 'Elena Vance, Co-Founder & CTO',
+    author: 'Elena Vance, Director of Digital Systems',
     authorPhoto: 'assets/team_elena.png',
-    title: 'Compiling WebGPU Shaders at the Distributed Edge',
+    title: 'Fluidity in Motion & Kinetic Physics',
     excerpt:
-      'How zero-copy WebAssembly framebuffers and Anycast edge compute render photorealistic physics without mobile thermal throttling.',
+      'Investigating the neurological impact of physics-based curves, mass deceleration, and tactile micro-animations on user engagement.',
     image: 'assets/blog_fluidity.png',
     content: [
       {
         type: 'p',
-        text: 'The transition from WebGL2 to WebGPU is not merely an incremental API update; it represents a tectonic shift in how browsers communicate with physical silicon. For the first time, compute shaders allow web applications to execute general-purpose parallel mathematics alongside rasterization pipelines.'
+        text: 'The human visual cortex did not evolve to interpret linear digital transitions. In the physical realm, objects possess mass, friction, and inertia. When a digital UI animates with robotic linear easings, our subconscious registers an uncanny disconnect.'
       },
       {
         type: 'h2',
-        text: 'Bypassing the CPU Bottleneck'
+        text: 'The Mathematics of Perceived Weight'
       },
       {
         type: 'p',
-        text: 'Traditional web animations depend on the main browser thread. When a heavy network request or background JSON parse hits the main thread, 60fps drops into a jarring stutter. The 13 Studios Vapor Engine shifts simulation loops entirely to GPU compute shaders via WebGPU, executing hundreds of thousands of particle interactions with less than 2% host CPU utilization.'
+        text: 'At 13 Studios, every motion token is modeled on gravitational physics. We calibrate cubic bezier curves to simulate physical momentum: swift initial displacement followed by an extended, asymptotic deceleration (such as cubic-bezier(0.16, 1, 0.3, 1)). This allows interactions to feel immediate without jarring the senses.'
       },
       {
         type: 'quote',
-        text: 'True fluidity requires treating the display as a physical canvas governed by differential kinematics, not CSS keyframes.',
-        citation: '13 Labs Technical Monograph 04'
+        text: 'Motion should feel like moving an expensive fountain pen across cold Japanese vellum — effortless, weighted, and precise.',
+        citation: '13 Studios Motion Protocol'
       },
       {
         type: 'h2',
-        text: 'Edge Pre-Compilation Architecture'
+        text: 'The Three Rules of Luxury Interaction'
       },
       {
         type: 'list',
         items: [
-          'WGSL Transpilation: Shaders are analyzed and optimized across our 280+ Anycast edge nodes prior to client dispatch.',
-          'Adaptive Shader Specialization: Low-power mobile devices receive specialized branchless kernels tailored for Apple Silicon and Adreno architectures.',
-          'Zero-Copy Framebuffer Swapping: Rendering directly into offscreen canvases preserves battery life and maintains steady 120Hz refresh rates.'
+          'Zero Latency Triggering: Response to pointer initiation must occur within 16 milliseconds.',
+          'Elastic Deceleration: Elements settle gently into their terminal coordinates without bounce or jitter.',
+          'Contextual Persistence: Elements transition from one state to another rather than abruptly appearing and disappearing.'
         ]
       },
       {
         type: 'p',
-        text: 'By coupling WebGPU with our distributed edge compiler, high-fidelity spatial applications can launch instantly anywhere on earth without lengthy installation screens.'
+        text: 'Through kinetic discipline, we transform basic transactional software into an object of quiet contemplation and enduring delight.'
       }
     ]
   },
   {
     id: 3,
-    category: 'Algorithmic Layout',
+    category: 'Digital Transformation',
     date: 'April 2026',
     readTime: '7 min read',
-    author: 'Marcus Thorne, Chief Operating Officer',
+    author: 'Marcus Thorne, Head of Strategy',
     authorPhoto: 'assets/team_marcus.png',
-    title: 'The Mathematical Proof of the 13-Point Matrix',
+    title: 'Structural Balance in UI Architecture',
     excerpt:
-      'Deriving golden-ratio harmonic proportions for responsive spatial layouts across heterogeneous mobile and spatial headsets.',
+      'Applying architectural grid principles, asymmetric proportion, and the 13-point matrix to elevate software into editorial art.',
     image: 'assets/blog_structure.png',
     content: [
       {
         type: 'p',
-        text: 'For decades, responsive web design has defaulted to a 12-column grid. While mathematically divisible by 2, 3, 4, and 6, a 12-column system inevitably produces symmetrical, predictable, and visually static compositions. The 13th prime column introduces an asymmetric balance that echoes classical architectural theory.'
+        text: 'Traditional digital layouts rely on symmetric 12-column frameworks borrowed from generic web templates. While mechanically functional, symmetric grids often produce monotonous, interchangeable screens that fail to evoke prestige or memorability.'
       },
       {
         type: 'h2',
-        text: 'The Fibonacci Connection'
+        text: 'The Philosophy of the Prime 13'
       },
       {
         type: 'p',
-        text: 'Thirteen is the seventh Fibonacci number. In classical Euclidean proportion, dynamic equilibrium is achieved through harmonic asymmetry—giving the eye a primary anchor while preserving expansive negative space for secondary data telemetry.'
+        text: 'Our signature 13-column matrix introduces intentional prime-number asymmetry. Because 13 cannot be halved into equal symmetric columns, designers are compelled to craft dynamic editorial ratios (such as 8:5, 7:6, or 9:4), echoing classical Renaissance proportions and Swiss architectural blueprints.'
       },
       {
         type: 'quote',
-        text: 'Symmetry is visual inertia. Asymmetry, when mathematically disciplined, creates life and forward momentum.',
-        citation: '13 Studios Spatial Manifesto'
+        text: 'Symmetry is the virtue of machines; conscious proportion is the triumph of human architecture.',
+        citation: 'Marcus Thorne, 13 Studios Monograph'
       },
       {
         type: 'h2',
-        text: 'Practical Application in Mission-Critical Dashboards'
-      },
-      {
-        type: 'list',
-        items: [
-          '8:5 Column Hierarchy: We map primary mission controls across 8 columns and secondary telemetry across 5, precisely matching the golden ratio (1.618).',
-          'Eliminating Gutter Jitter: Fluid sub-pixel gutter interpolation prevents horizontal micro-shifts during dynamic container resizing.',
-          'Spatial Headset Adaptability: In WebXR and VisionOS spatial windows, 13-column layouts maintain geometric coherence regardless of viewer focal distance.'
-        ]
+        text: 'Transforming Enterprise Interfaces'
       },
       {
         type: 'p',
-        text: 'Whether designing an executive trading terminal or an haute horology flagship, the 13-point matrix delivers unprecedented visual authority and calm cognitive focus.'
+        text: 'When applied to enterprise software like Solaria’s energy grid telemetry console, the 13-column system allows high-density analytical widgets to coexist harmoniously alongside spacious executive briefing summaries, eliminating operator cognitive fatigue while magnifying brand equity.'
       }
     ]
   }
 ];
 
 export default function Journal() {
-  const [selectedArticle, setSelectedArticle] = useState(null);
   const sectionRef = useRef(null);
+  const cardRefs = useRef([]);
+  const [selectedArticle, setSelectedArticle] = useState(null);
 
   useEffect(() => {
     if (!sectionRef.current) return;
 
     const ctx = gsap.context(() => {
+      // Header animation
       const header = sectionRef.current.querySelector('.section-header');
       const line = header?.querySelector('.section-header-line');
       const title = header?.querySelector('.section-title');
@@ -184,17 +178,37 @@ export default function Journal() {
           {
             y: 0,
             opacity: 1,
-            duration: 1,
+            duration: 0.8,
             stagger: 0.1,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: header,
-              start: 'top 85%',
+              start: 'top 90%',
               toggleActions: 'play none none none',
             },
           }
         );
       }
+
+      // Journal cards reveal
+      cardRefs.current.forEach((card) => {
+        if (!card) return;
+        gsap.fromTo(
+          card,
+          { y: 80, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 85%',
+              toggleActions: 'play none none none',
+            },
+          }
+        );
+      });
     }, sectionRef);
 
     return () => ctx.revert();
@@ -202,76 +216,64 @@ export default function Journal() {
 
   return (
     <section ref={sectionRef} id="journal" className="journal-section">
-      <div className="journal-container">
-        {/* Section Header */}
-        <div className="section-header">
-          <div className="section-header-line"></div>
-          <div className="section-header-text">
-            <span className="section-number">04</span>
-            <h2 className="section-title">Research & Changelog</h2>
-          </div>
-          <p className="section-header-desc">
-            Technical whitepapers, performance benchmarks, and architecture releases from 13 Labs.
-          </p>
-        </div>
-
-        {/* Articles Grid */}
-        <div className="journal-grid">
-          {articles.map((article) => (
-            <article
-              key={article.id}
-              className="journal-card startup-research-card"
-              onClick={() => setSelectedArticle(article)}
-              role="button"
-              tabIndex={0}
-              aria-label={`Read research paper: ${article.title}`}
-            >
-              <div className="journal-card-visual">
-                <div
-                  className="journal-card-img"
-                  style={{ backgroundImage: `url('${article.image}')` }}
-                ></div>
-                <div className="journal-card-overlay"></div>
-                <span className="journal-badge">{article.category}</span>
-              </div>
-
-              <div className="journal-card-content">
-                <div className="journal-meta-row">
-                  <span className="journal-date">{article.date}</span>
-                  <span className="journal-meta-sep">•</span>
-                  <span className="journal-read-time">{article.readTime}</span>
-                </div>
-
-                <h3 className="journal-card-title">{article.title}</h3>
-                <p className="journal-card-excerpt">{article.excerpt}</p>
-
-                <div className="journal-card-author-bar">
-                  <div
-                    className="journal-author-pic"
-                    style={{ backgroundImage: `url('${article.authorPhoto}')` }}
-                  ></div>
-                  <span className="journal-author-name">{article.author}</span>
-                </div>
-
-                <div className="journal-card-footer">
-                  <span className="journal-read-link">
-                    <span>Read Whitepaper</span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
+      <div className="section-header">
+        <span className="section-number">04 /</span>
+        <h2 className="section-title">The Journal</h2>
+        <div className="section-header-line"></div>
       </div>
 
-      {/* Article Reader Modal */}
-      {selectedArticle && (
-        <ArticleModal
-          article={selectedArticle}
-          onClose={() => setSelectedArticle(null)}
-        />
-      )}
+      <div className="journal-intro-row">
+        <p className="journal-lead-text">
+          Critical essays, technical monographs, and design philosophy dispatches published periodically by our practice directors.
+        </p>
+      </div>
+
+      <div className="journal-grid">
+        {articles.map((article, idx) => (
+          <article
+            key={article.id}
+            ref={(el) => (cardRefs.current[idx] = el)}
+            className="journal-card"
+            data-cursor-mode="read"
+            onClick={() => setSelectedArticle(article)}
+          >
+            <div className="journal-card-image-wrap">
+              <img
+                src={article.image}
+                alt={article.title}
+                className="journal-card-image"
+                loading="lazy"
+              />
+              <div className="journal-card-hover-overlay">
+                <span className="journal-read-pill">Read Essay <i className="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+            <div className="journal-card-content">
+              <div className="journal-card-meta">
+                <span className="journal-card-category">{article.category}</span>
+                <span className="journal-card-readtime">{article.readTime}</span>
+              </div>
+              <h3 className="journal-card-title">{article.title}</h3>
+              <p className="journal-card-excerpt">{article.excerpt}</p>
+              <div className="journal-card-author-row">
+                <div className="journal-author-badge">
+                  <img src={article.authorPhoto} alt={article.author} className="journal-author-thumb" />
+                  <span className="journal-card-date">{article.date}</span>
+                </div>
+                <span className="journal-card-link underline-hover">
+                  Read Entry <i className="fa-solid fa-arrow-right-long"></i>
+                </span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {/* Editorial Article Modal */}
+      <ArticleModal
+        article={selectedArticle}
+        onClose={() => setSelectedArticle(null)}
+      />
     </section>
   );
 }
